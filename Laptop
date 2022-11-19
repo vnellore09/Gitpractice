@@ -1,0 +1,20 @@
+git clone
+
+git status
+
+git add . (working to staging)
+
+git reset head file name( staging to work space)
+
+git commit -m "label message" file name(staging to Local Repo)
+
+git reset -- soft cid(commit id {n-1})(Local to staging)
+
+git reset --mixed cid( local Repo to work spcae) - Conditions apply
+
+
+git pull --rebase (pull from remote to local repo)
+
+
+
+git push (local to remote repo)
