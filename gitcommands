@@ -1,0 +1,92 @@
+Git Branch Commands
+
+-------------------------------------
+
+git branch -- list all branches
+
+git branch branch name -- creating new branch
+
+git branch release1
+
+git checkout main ---switching to main branch
+        (or)
+git switch -- both are same (version 2.23 onwards you can use both)
+
+
+git checkout -b branch name - create a new branch and switch at same time
+
+git branch -v (display last commit on each branch)
+
+
+git branch --move old branch name new branch name (changing branch name locally)
+
+git push --set-upstream origin new branch name (changing globally branch name)
+
+** Condition - After using the above command, both old and new bracnhes are still available 
+
+you want to delete the old branch name 
+
+git push origin --delete old branch name (deleting permantenly old branch)
+
+
+
+git branch   --all (Display all branch names, ebenthough modified names also)
+
+git fetch - Tells git local to retrieve the updates from git remote
+
+git pull - Directly copies the data from remote to local repo
+
+git reflog - Git reflog is a history of all the changes made to a git repository. 
+             It is a valuable tool for debugging and troubleshooting purposes. 
+
+
+
+
+--------------------------------------
+
+Tags
+
+ 2 types
+
+ 1) Lightweight tags
+
+ 2) Annoanted Tags
+
+ 
+
+Tag : To release a particulr version of software or code after completion of development
+
+
+
+tags are mainly used for release purpose
+
+Git tag v0.1 -- creating light weight tag
+
+git tag -a v1.1 -m 'label message" - Annonated tag
+
+
+
+git tags - list all tags
+
+git tag -d ( delete the tag) from local
+
+git tag -l (List all tags)
+
+git tag -d $(git tag -l) -- Delete all tags at a time locally 
+
+
+------------
+
+How to restore tags from remote eventhough you delete unfortunately
+
+
+git fetch --- download the tags at locally
+
+
+------------
+
+Delete all tags at remote
+
+git push origin --delete $(git tag -l)
+
+
