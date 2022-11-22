@@ -1,0 +1,34 @@
+dd -- delete a line
+
+ndd -- no.of lines delete
+
+yy-- copy a line
+
+nyy -- no.of lines copy
+
+p -- paste
+
+u --undo
+
+dw -- delete a word
+
+ndw - no.of words
+
+x -- char delete (deleting letter by letter)
+
+r -- replace  a letter
+
+R - Continuous replacement
+
+H - Head (cursor moves first line)
+
+G - ground (Cursor goes end line)
+
+$ -- cursor moves to end of the line
+
+^ -- cursor moves to starting of the line
+
+0 -- below the cursor new line
+
+O  -- above the cursor new line
+
